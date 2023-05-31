@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	-ms-user-select: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+	font-family: "Kanit", sans-serif;
+}
+
+button {
+	border: none;
+	outline: none;
+}
+
+button:hover {
+	cursor: pointer;
+}

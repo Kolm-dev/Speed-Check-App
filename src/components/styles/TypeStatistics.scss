@@ -1,0 +1,29 @@
+$icon1: "/speedometer.svg";
+$icon2: "/time.svg";
+
+@mixin icon-before($icon) {
+	content: "";
+	display: inline-block;
+	width: 15px;
+	position: relative;
+	top: 5px;
+	height: 15px;
+	margin-right: 3px;
+	background: url("#{$icon}") no-repeat center center;
+	background-size: cover;
+}
+
+.typeStatistics {
+	font-size: 12px;
+	.statisticsItem {
+		position: relative;
+		padding: 5px;
+	}
+
+	.statisticsItem:nth-child(1)::before {
+		@include icon-before($icon1);
+	}
+	.statisticsItem:nth-child(2)::before {
+		@include icon-before($icon2);
+	}
+}

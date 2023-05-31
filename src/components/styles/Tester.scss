@@ -1,0 +1,53 @@
+.testWrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 15px;
+}
+
+.correct {
+	color: green;
+	font-weight: 500;
+}
+
+.textForTest {
+	display: block;
+	border: 1px solid #17a2b8;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #343a40;
+	color: #fff;
+	margin-bottom: 10px;
+	white-space: pre-wrap;
+	word-break: break-word;
+}
+
+.controls {
+	display: flex;
+	justify-content: center;
+	margin-top: 20px;
+}
+
+.controls .btn {
+	margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+	.testWrapper {
+		width: 90%;
+	}
+}
+
+@media (max-width: 576px) {
+	.testWrapper {
+		width: 100%;
+	}
+
+	.controls {
+		flex-direction: column;
+	}
+
+	.controls .btn {
+		margin-bottom: 10px;
+	}
+}
